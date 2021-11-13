@@ -1,0 +1,65 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 100% !important;
+    overflow-x: hidden !important;
+}
+*   {
+    box-sizing: border-box;
+
+}
+.dropdown-button    {
+    background-color: transparent;
+}
+.dropdown-button:hover   {
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    color: black !important;
+}
+.book-button    {
+    background-color: red;
+    color: white;
+    width: 150px;
+    height: 100px;
+    margin-left: 50px;
+    padding: 10px;
+    border: none;
+
+}
+.red-line   {
+    width: .5% !important;
+    height: .2rem !important;
+    background-color: red;
+    size: 1;
+}
+.subscribe  {
+    height: 180px;
+}
+div a{
+    text-decoration: none;
+}
+.dark-white {
+    color: rgb(153, 148, 148);
+}
+.dotted {
+        color: #ddd;
+        border-bottom:1px dashed #ddd;
+        border-width: 5px;
+        width: 100%;
+}
+footer  {
+    height: 400px;
+}
+.footer-button  {
+    background-color: transparent;
+    border: .5px solid #ddd;
+    color: rgb(153, 148, 148);
+}
+.banner-img {
+    background-image: url(https://source.unsplash.com/random);
+    background-position: center;
+}
+.banner-text    {
+    color: aliceblue;
+}

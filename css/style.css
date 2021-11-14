@@ -59,7 +59,20 @@ footer  {
 .banner-img {
     background-image: url(https://source.unsplash.com/random);
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .banner-text    {
     color: aliceblue;
+}
+.dark-image img {
+    -webkit-filter: brightness(100%);
+}
+.dark-image img:hover{
+    -webkit-filter: brightness(30%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
 }

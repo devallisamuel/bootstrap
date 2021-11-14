@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
 </head>
 <body>
-    <header>
+  <!-- about-nav -->
+  <header>
         <nav class="nav bg-danger text-white ">
             <a class="nav-link text-white ms-5" aria-current="page" href="#">FAQ |</a>
             <a class="nav-link text-white" href="#">Help Desk |</a>
@@ -34,7 +36,7 @@
                 </div>
             </div>
             <!-- dark nav -->
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark position-static">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container-fluid">
                   <!-- <a class="navbar-brand" href="#">Navbar</a> -->
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -128,7 +130,7 @@
                         </ul>
                       </li>
                     </ul>
-                    <button class="book-button" type="submit">BOOK NOW</button>
+                    <button class=" book-button small" type="submit">BOOK NOW</button>
                   </div>
                   <div class="col-sm-12 dflex">
                       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -137,51 +139,315 @@
                   </div>
                 </div>
               </nav>
-            </header>
-            <!-- carousel -->
-            <!-- <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="./images/images2.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./images/images1.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./images/huh!.jpg" class="d-block w-100" alt="...">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div> -->
-
-              <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="./images/huh!.jpg" class="d-block w-100 h-75" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./images/images2.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./images/images3.jpg" class="d-block w-100 " alt="...">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
+  </header>
+  <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100 h-50" src="https://unsplash.it/640/425?random" alt="First slide" class = "img-fluid" height="50%">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://source.unsplash.com/user/erondu/600x600" alt="Second slide" clas = "img-fluid" height="50%">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://source.unsplash.com/user/erondu/600x600" alt="Third slide" class = "img-fluid" height="50%">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div> -->
+  <!-- courses -->
+  <div class="container mt-2">
+    <div class="row">
+      <h3>OUR <span class="text-danger">COURSES</span></h3>
+      <hr class="bg-danger ms-3" style="width: 30px; height: 2.5px;">
+      <h6 class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, earum?</h6>
+      <div class="col-md-3 mt-2">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top img-fluid" src="./images/4.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Accounting Technologies</h5>
+            <hr class="bg-danger ms-0" style="width: 50px; height: 2.5px;">
+            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, sit.</p>
+            <a href="#" class="btn btn-dark">VIEW DETAILS</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mt-2">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top img-fluid" src="./images/5.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Accounting Technologies</h5>
+            <hr class="bg-danger ms-0" style="width: 50px; height: 2.5px;">
+            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, sit.</p>
+            <a href="#" class="btn btn-dark">VIEW DETAILS</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mt-2">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top img-fluid" src="./images/6.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Accounting Technologies</h5>
+            <hr class="bg-danger ms-0" style="width: 50px; height: 2.5px;">
+            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, sit.</p>
+            <a href="#" class="btn btn-dark">VIEW DETAILS</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mt-2">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top img-fluid" src="./images/8.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Accounting Technologies</h5>
+            <hr class="bg-danger ms-0" style="width: 50px; height: 2.5px;">
+            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, sit.</p>
+            <a href="#" class="btn btn-dark">VIEW DETAILS</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mt-2">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top img-fluid" src="./images/4.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Accounting Technologies</h5>
+            <hr class="bg-danger ms-0" style="width: 50px; height: 2.5px;">
+            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, sit.</p>
+            <a href="#" class="btn btn-dark">VIEW DETAILS</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mt-2">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top img-fluid" src="./images/5.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Accounting Technologies</h5>
+            <hr class="bg-danger ms-0" style="width: 50px; height: 2.5px;">
+            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, sit.</p>
+            <a href="#" class="btn btn-dark">VIEW DETAILS</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mt-2">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top img-fluid" src="./images/6.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Accounting Technologies</h5>
+            <hr class="bg-danger ms-0" style="width: 50px; height: 2.5px;">
+            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, sit.</p>
+            <a href="#" class="btn btn-dark">VIEW DETAILS</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mt-2">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top img-fluid" src="./images/8.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Accounting Technologies</h5>
+            <hr class="bg-danger ms-0" style="width: 50px; height: 2.5px;">
+            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, sit.</p>
+            <a href="#" class="btn btn-dark">VIEW DETAILS</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- teachers -->
+  <div class="container mt-2">
+    <div class="row">
+      <h3>OUR <span class="text-danger">TEACHERS</span></h3>
+      <hr class="bg-danger ms-3" style="width: 30px; height: 2.5px;"  >
+      <h6 class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, earum?</h6>
+      <div class="col-md-3">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top img-fluid" src="https://source.unsplash.com/400x400/?boss" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title text-danger text-lg">JOHN DOE <span class="text-dark small">- Teacher</span> </h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laborum?</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <i class="fa fa-instagram fa-lg"></i>
+              <i class="fa fa-facebook fa-lg"></i>
+              <i class="fa fa-twitter fa-lg"></i>
+              <a href="#" class="btn btn-dark">view details </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top img-fluid" src="https://source.unsplash.com/400x400/?boss" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title text-danger text-lg">JOHN DOE <span class="text-dark small">- Teacher</span> </h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laborum?</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <i class="fa fa-instagram fa-lg"></i>
+              <i class="fa fa-facebook fa-lg"></i>
+              <i class="fa fa-twitter fa-lg"></i>
+              <a href="#" class="btn btn-dark">view details </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top img-fluid" src="https://source.unsplash.com/400x400/?boss" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title text-danger text-lg">JOHN DOE <span class="text-dark small">- Teacher</span> </h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laborum?</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <i class="fa fa-instagram fa-lg"></i>
+              <i class="fa fa-facebook fa-lg"></i>
+              <i class="fa fa-twitter fa-lg"></i>
+              <a href="#" class="btn btn-dark">view details </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top img-fluid" src="https://source.unsplash.com/400x400/?boss" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title text-danger text-lg">JOHN DOE <span class="text-dark small">- Teacher</span> </h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laborum?</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <i class="fa fa-instagram fa-lg"></i>
+              <i class="fa fa-facebook fa-lg"></i>
+              <i class="fa fa-twitter fa-lg"></i>
+              <a href="#" class="btn btn-dark">view details </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- gallery -->
+  <div class="container mt-2">
+    <h3>OUR <span class="text-danger">GALLERY</span></h3>
+    <hr class="bg-danger" style="width: 30px; height: 2.5px;" >
+    <h6 class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, earum?</h6>
+    <div class="row mt-2">
+        <div class="col-md-3 dark-image">
+            <img src="https://source.unsplash.com/random/400x400" alt="" srcset="" class="img-fluid mb-2 mt-2">
+        </div>
+        <div class="col-md-3 dark-image">
+            <img src="https://source.unsplash.com/random/400x400" alt="" srcset="" class="img-fluid mb-2 mt-2">
+        </div>
+        <div class="col-md-3 dark-image">
+            <img src="https://source.unsplash.com/random/400x400" alt="" srcset="" class="img-fluid mb-2 mt-2">
+        </div>
+        <div class="col-md-3 dark-image">
+            <img src="https://source.unsplash.com/random/400x400" alt="" srcset="" class="img-fluid mb-2 mt-2">
+        </div>
+        <div class="col-md-3 dark-image">
+            <img src="https://source.unsplash.com/random/400x400" alt="" srcset="" class="img-fluid mb-2 mt-2">
+        </div>
+        <div class="col-md-3 dark-image">
+            <img src="https://source.unsplash.com/random/400x400" alt="" srcset="" class="img-fluid mb-2 mt-2">
+        </div>
+        <div class="col-md-3 dark-image">
+            <img src="https://source.unsplash.com/random/400x400" alt="" srcset="" class="img-fluid mb-2 mt-2">
+        </div>
+        <div class="col-md-3 dark-image">
+            <img src="https://source.unsplash.com/random/400x400" alt="" srcset="" class="img-fluid mb-2 mt-2">
+        </div>
+        <div class="col-md-3 dark-image">
+            <img src="https://source.unsplash.com/random/400x400" alt="" srcset="" class="img-fluid mb-2 mt-2">
+        </div>
+        <div class="col-md-3 dark-image">
+            <img src="https://source.unsplash.com/random/400x400" alt="" srcset="" class="img-fluid mb-2 mt-2">
+        </div>
+        <div class="col-md-3 dark-image">
+            <img src="https://source.unsplash.com/random/400x400" alt="" srcset="" class="img-fluid mb-2 mt-2">
+        </div>
+        <div class="col-md-3 dark-image">
+            <img src="https://source.unsplash.com/random/400x400" alt="" srcset="" class="img-fluid mb-2 mt-2">
+        </div>
+    </div>
+</div>
+  <!-- subscribe -->
+  <div class="subscribe bg-danger mt-2">
+    <div class="container">
+        <div class="row d-flex align-items-center">
+          <div class="col-md-6 col-sm-12 mt-5 text-white">
+            <h3><i class="fa fa-envelope" aria-hidden="true"></i> SUBSCRIBE TO OUR NEWS LETTER</h3>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="input-group mt-5">
+              <input type="text" class="form-control" placeholder="Your Email" aria-label="Recipient's username" aria-describedby="button-addon2">
+              <button class="btn btn-dark text-white" type="button" id="button-addon2">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <footer class="bg-dark p-0 m-0">
+    <div class="container bg-dark mb-2">
+      <div class="row">
+      <div class="row mt-3">
+        <div class="col-md-3 col-sm-12">
+          <img src="./images/pressimage.png" alt="" srcset="" class="img-fluid">
+          <h6 class="dark-white mt-2">Lorem ipsum dolor sit amet consectetur.</h6>
+          <h6 class="dark-white">123-456-789</h6>
+          <h6 class="dark-white">contact@yourdomain.com</h6>
+          <h6 class="dark-white">www.yourdomain.com</h6>
+        </div>
+        <div class="col-md-3 col-sm-12">
+          <h4 class="text-white">Useful Links</h4>
+          <h6 class="dark-white">About Us</h6>
+          <h6 class="dark-white">Our Courses</h6>
+          <h6 class="dark-white">Pricing Table</h6>
+          <h6 class="dark-white">Gallery</h6>
+          <h6 class="dark-white">Shop</h6>
+        </div>
+        <div class="col-md-3 col-sm-12">
+          <h4 class="text-white">Twitter Feed</h4>
+          <small class="dark-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+             Totam ab facere facilis delectus quae consequuntur!
+          </small>
+          <small class="dark-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+             Totam ab facere facilis delectus quae consequuntur!
+          </small>
+          <small class="dark-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+             Totam ab facere facilis delectus quae consequuntur!
+          </small>
+        </div>
+        <div class="col-md-3 col-sm-12 mt-2">
+          <h4 class="text-white">Opening Hours</h4>
+          <h6 class="dark-white">Mon - Tues: 6:00AM - 10:00AM</h6>
+          <!-- <hr class="dotted"> -->
+          <h6 class="dark-white">Mon - Tues: 6:00AM - 10:00AM</h6>
+          <h6 class="dark-white">Mon - Tues: 6:00AM - 10:00AM</h6>
+        </div>
+        <div class="col-md-2 col-sm-12 mt-2">
+          <h4 class="text-white">Call Us Now</h4>
+          <h6 class="dark-white small">123-456-789</h6>
+          <h6 class="dark-white small">123-456-789</h6>
+        </div>
+        <div class="col-md-4 col-sm-12 mt-2">
+          <h4 class="text-white">Connect With Us</h4>
+        </div>
+        <div class="col-md-6 col-sm-12 mt-2">
+          <h4 class="text-white">Subscribe Us</h4><br>           
+          <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Your Email" aria-label="Your Email" aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <button class="input-group-text bg-danger text-white border-0" id="basic-addon2">Subscribe</button>
               </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 
 </body>
 </html>

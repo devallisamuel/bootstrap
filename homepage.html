@@ -6,637 +6,708 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/spinner.css">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
+    <script src="./js/spinner.js"></script>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
-<body>
+
+<body onload="myFunction()">
+  <div class="container-fluid col-md-12 col-sm-12 col-lg-12 d-flex justify-content-center">
+    <div class="spinner6">
+  </div>
+  </div>
   <!-- about-nav -->
-  <header>
-        <nav class="nav bg-danger text-white ">
-            <a class="nav-link text-white ms-5" aria-current="page" href="#">FAQ |</a>
-            <a class="nav-link text-white" href="#">Help Desk |</a>
-            <a class="nav-link text-white" href="#">Login</a>
-        </nav>
-            <div class="row ms-0">
-                <div class="col-md-2 .col-sm-12 d-flex justify-content-center  mt-2">
-                    <img src="./images/pressimage.png" alt="" width="60%" height="70%">
-                </div>
-                <div class="col-md-5 .col-sm-12  d-flex justify-content-center mt-2 ">
-                    <div class="ms-5">
-                        <h6>CALL US TODAY</h6>
-                        <h6>+123456</h6>
-                    </div>
-                </div>
-                <div class="col-md-5 col-sm-12  d-flex justify-content-center mt-2">
-                    <div>
-                        <h6>WE ARE OPEN</h6>
-                        <h6>8AM - 10PM</h6>
-                    </div>
-                </div>
-            </div>
-            <!-- dark nav -->
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <div class="container-fluid">
-                  <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle dropdown-button ms-5 text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Home
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="./index.html">About1</a></li>
-                          <li><a class="dropdown-item" href="./aboutPage.html">About2</a></li>
-                          <!-- <li><hr class="dropdown-divider"></li> -->
-                          <li><a class="dropdown-item" href="./contact.html">Contact</a></li>
-                          <li><a class="dropdown-item" href="./gallery.html">Gallery</a></li>
-                          <li><a class="dropdown-item" href="./profile.html">Profile</a></li>
-                        </ul>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle dropdown-button ms-5 text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Features
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="./index.html">About1</a></li>
-                          <li><a class="dropdown-item" href="./aboutPage.html">About2</a></li>
-                          <!-- <li><hr class="dropdown-divider"></li> -->
-                          <li><a class="dropdown-item" href="./contact.html">Contact</a></li>
-                          <li><a class="dropdown-item" href="./gallery.html">Gallery</a></li>
-                          <li><a class="dropdown-item" href="./profile.html">Profile</a></li>
-                        </ul>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle dropdown-button ms-5 text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Pages
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="./index.html">About1</a></li>
-                          <li><a class="dropdown-item" href="./aboutPage.html">About2</a></li>
-                          <!-- <li><hr class="dropdown-divider"></li> -->
-                          <li><a class="dropdown-item" href="./contact.html">Contact</a></li>
-                          <li><a class="dropdown-item" href="./gallery.html">Gallery</a></li>
-                          <li><a class="dropdown-item" href="./profile.html">Profile</a></li>
-                        </ul>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle dropdown-button ms-5 text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Portfolio
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="./index.html">About1</a></li>
-                          <li><a class="dropdown-item" href="./aboutPage.html">About2</a></li>
-                          <!-- <li><hr class="dropdown-divider"></li> -->
-                          <li><a class="dropdown-item" href="./contact.html">Contact</a></li>
-                          <li><a class="dropdown-item" href="./gallery.html">Gallery</a></li>
-                          <li><a class="dropdown-item" href="./profile.html">Profile</a></li>
-                        </ul>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle dropdown-button ms-5 text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Courses
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="./index.html">About1</a></li>
-                          <li><a class="dropdown-item" href="./aboutPage.html">About2</a></li>
-                          <!-- <li><hr class="dropdown-divider"></li> -->
-                          <li><a class="dropdown-item" href="./contact.html">Contact</a></li>
-                          <li><a class="dropdown-item" href="./gallery.html">Gallery</a></li>
-                          <li><a class="dropdown-item" href="./profile.html">Profile</a></li>
-                        </ul>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle dropdown-button ms-5 text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Teachers
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="./index.html">About1</a></li>
-                          <li><a class="dropdown-item" href="./aboutPage.html">About2</a></li>
-                          <!-- <li><hr class="dropdown-divider"></li> -->
-                          <li><a class="dropdown-item" href="./contact.html">Contact</a></li>
-                          <li><a class="dropdown-item" href="./gallery.html">Gallery</a></li>
-                          <li><a class="dropdown-item" href="./profile.html">Profile</a></li>
-                        </ul>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle dropdown-button ms-5 text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Blogs
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="./index.html">About1</a></li>
-                          <li><a class="dropdown-item" href="./aboutPage.html">About2</a></li>
-                          <!-- <li><hr class="dropdown-divider"></li> -->
-                          <li><a class="dropdown-item" href="./contact.html">Contact</a></li>
-                          <li><a class="dropdown-item" href="./gallery.html">Gallery</a></li>
-                          <li><a class="dropdown-item" href="./profile.html">Profile</a></li>
-                        </ul>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle dropdown-button ms-5 text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Short Codes
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="./index.html">About1</a></li>
-                          <li><a class="dropdown-item" href="./aboutPage.html">About2</a></li>
-                          <!-- <li><hr class="dropdown-divider"></li> -->
-                          <li><a class="dropdown-item" href="./contact.html">Contact</a></li>
-                          <li><a class="dropdown-item" href="./gallery.html">Gallery</a></li>
-                          <li><a class="dropdown-item" href="./profile.html">Profile</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                    <button class=" book-button small" type="submit">BOOK NOW</button>
+  <section id="myDiv">
+    <header>
+          <nav  class="nav bg-danger text-white">
+              <a class="nav-link text-white ms-5" aria-current="page" href="#">FAQ |</a>
+              <a class="nav-link text-white" href="#">Help Desk |</a>
+              <a class="nav-link text-white" href="#">Login</a>
+          </nav>
+              <div class="row ms-0">
+                  <div class="col-md-2 .col-sm-12 d-flex justify-content-center  mt-2">
+                      <img src="./images/pressimage.png" alt="" width="60%" height="70%">
                   </div>
-                  <div class="col-sm-12 dflex">
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon bg-dark"></span>
-                      </button>
+                  <div class="col-md-5 .col-sm-12  d-flex justify-content-center mt-2 ">
+                      <div class="ms-5">
+                          <h6>CALL US TODAY</h6>
+                          <h6>+123456</h6>
+                      </div>
                   </div>
-                </div>
-              </nav>
-  </header>
-  <div style="position: relative; " class="slideshow-container">
-    <div id="demo" class="carousel slide" data-bs-ride="carousel">
-
-        <!-- Indicators/dots -->
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-        </div>
-        
-        <!-- The slideshow/carousel -->
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img  src="./Images/home-pic1.jpg" alt="Los Angeles" class="d-block" height="100%" style="width:100%; background-size: cover; background-position: center; background-repeat: no-repeat;">
-            </div>
-            <div class="carousel-item">
-                <img src="./Images/home-pic2.jpg" alt="Chicago" class="d-block" height="100%" style="width:100%; background-size: cover;">
-            </div>
-            <div class="carousel-item">
-                <img src="./Images/home-pic3.jpg" alt="New York" class="d-block" height="100%" style="width:100%; background-size: cover;">
-            </div>
-        </div>
-        
-        <!-- Left and right controls/icons -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-        </button>  
-    </div>
-    <div class="text-white w-50" style="position: absolute; top:30%;left: 10%; z-index: 1000;">
-        <h1 style="font-size: 5rem; font-weight: 400;">EDUCATION</h1>
-        <p class="p-2" style="font-size: 1.5rem; background-image: linear-gradient(rgba(0,0,0,.5), rgba(18, 17, 48, 0.5)); border-left: 2px solid red;" >EDUCATION FOR EVERYONE</p>
-        <p >We provide always our best services for our client and always try to achieve our client's trust and satisfaction</p>
-        <div>
-            <button class="text-white p-2" style="background-color: #202c45; border: none; border-left: 3px solid red;" >View Details</button>
-        </div>
-    </div>
-</div>
-  <!-- education -->
-<!-- --------------------WELCOME TO EDUCATION----------- -->
-<div class="container pb-4">
-  <div class="row">
-      <div class="col-md-8">
-          <div class="mt-4">
-              <h2>WELCOME TO EDUCATION</h2>
-              <p><span style="border-bottom:3px solid red"> GRAVIDA</span> VITAE DAPIBUS EDUCATION</p>
-          </div>
-
-          <div class="welcome-content">
-              <p>
-                  Cum sociis natoque penatibus et ultrices volutpat. Nullam wisi ultricies a, gravida vitae, dapibus risus ante sodales lectus.Cum sociis natoque penatibus et ultrices volutpat.
-                  Nullam wisi ultricies a, gravida vitae, dapibus risus ante sodales lectus
-              </p>
-          </div>
-          <div class="mt-4">
-              <div class="row">
-                  <div class="d-flex">
-                      <div class="col-md-6">
-                          <div class="d-flex">
-                              <div>
-                                  <i class="fa fa-scissors  border p-3 text-white rounded-circle" style="background-color: #202c45;"></i>
-                              </div>
-                              <div class="ms-4">
-                                  <h6>LESS CSS</h6>
-                                  <p>Lorem ipsum dolor sit amet, consectetur ipsum dolor sit amet.</p>
-                              </div>
-                              
-                          </div>
-
-                          <div class="d-flex mt-4">
-                              <div>
-                                  <i class="fa fa-wrench border p-3 text-white rounded-circle" style="background-color: #f2184f;"></i>
-                              </div>
-                              <div class="ms-4 ">
-                                  <h6>SPECIAL SHORTCOD</h6>
-                                  <p>Lorem ipsum dolor sit amet, consectetur ipsum dolor sit amet.</p>
-                              </div>
-                          </div>
-
-                          <div class="d-flex mt-4">
-                              <div>
-                                  <i class="fa fa-laptop border p-3 text-white rounded-circle" style="background-color: #202c45;"></i>
-                              </div>
-                              <div class="ms-4">
-                                  <h6>RESPONSIVE</h6>
-                                  <p>Lorem ipsum dolor sit amet, consectetur ipsum dolor sit amet.</p>
-                          
-                              </div>
-                          </div>
+                  <div class="col-md-5 col-sm-12  d-flex justify-content-center mt-2">
+                      <div>
+                          <h6>WE ARE OPEN</h6>
+                          <h6>8AM - 10PM</h6>
                       </div>
-                          <!----------------------- COURSE CONTENT----------------------------- -->
-                      <div class="col-md-6 ms-4">
-                          <div class="d-flex">
-                              <div>
-                                  <i class="fa fa-pencil text-white p-3 rounded-circle"  style="background-color: #f2184f;"></i>
-                              </div>
-                              <div class="ms-4">
-                                  <h6>EASY CUSTOMIZ</h6>
-                                  <p>Lorem ipsum dolor sit amet, consectetur ipsum dolor sit amet.</p>
-                          
-                              </div>
-                          </div>
-
-                          <div class="d-flex mt-4">
-                              <div>
-                                  <i class="fa fa-anchor border p-3 text-white rounded-circle" style="background-color: #202c45;"></i>
-                              </div>
-                              <div class="ms-4">
-                                  <h6>W3 VALIDATION</h6>
-                                  <p>Lorem ipsum dolor sit amet, consectetur ipsum dolor sit amet.</p>
-                              </div>
-                              
-                          </div>
-
-                          <div class="d-flex mt-4">
-                              <div >
-                                  <i class="fa fa-lightbulb-o text-white p-3 rounded-circle" style="background-color: #f2184f;"></i>
-                              </div>
-                              <div class="ms-4">
-                                  <h6>RETINA READY</h6>
-                                  <p>Lorem ipsum dolor sit amet, consectetur ipsum dolor sit amet.</p>
-                              </div>
-                          </div>
+                  </div>
+              </div>
+              <!-- dark nav -->
+              <div   class="myNavbar w-100">
+                <nav  class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <div class="container-fluid">
+                      <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle dropdown-button ms-5 text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Home
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="./index.html">About1</a></li>
+                              <li><a class="dropdown-item" href="./aboutPage.html">About2</a></li>
+                              <!-- <li><hr class="dropdown-divider"></li> -->
+                              <li><a class="dropdown-item" href="./contact.html">Contact</a></li>
+                              <li><a class="dropdown-item" href="./gallery.html">Gallery</a></li>
+                              <li><a class="dropdown-item" href="./profile.html">Profile</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle dropdown-button ms-5 text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Features
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="./index.html">About1</a></li>
+                              <li><a class="dropdown-item" href="./aboutPage.html">About2</a></li>
+                              <!-- <li><hr class="dropdown-divider"></li> -->
+                              <li><a class="dropdown-item" href="./contact.html">Contact</a></li>
+                              <li><a class="dropdown-item" href="./gallery.html">Gallery</a></li>
+                              <li><a class="dropdown-item" href="./profile.html">Profile</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle dropdown-button ms-5 text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Pages
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="./index.html">About1</a></li>
+                              <li><a class="dropdown-item" href="./aboutPage.html">About2</a></li>
+                              <!-- <li><hr class="dropdown-divider"></li> -->
+                              <li><a class="dropdown-item" href="./contact.html">Contact</a></li>
+                              <li><a class="dropdown-item" href="./gallery.html">Gallery</a></li>
+                              <li><a class="dropdown-item" href="./profile.html">Profile</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle dropdown-button ms-5 text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Portfolio
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="./index.html">About1</a></li>
+                              <li><a class="dropdown-item" href="./aboutPage.html">About2</a></li>
+                              <!-- <li><hr class="dropdown-divider"></li> -->
+                              <li><a class="dropdown-item" href="./contact.html">Contact</a></li>
+                              <li><a class="dropdown-item" href="./gallery.html">Gallery</a></li>
+                              <li><a class="dropdown-item" href="./profile.html">Profile</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle dropdown-button ms-5 text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Courses
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="./index.html">About1</a></li>
+                              <li><a class="dropdown-item" href="./aboutPage.html">About2</a></li>
+                              <!-- <li><hr class="dropdown-divider"></li> -->
+                              <li><a class="dropdown-item" href="./contact.html">Contact</a></li>
+                              <li><a class="dropdown-item" href="./gallery.html">Gallery</a></li>
+                              <li><a class="dropdown-item" href="./profile.html">Profile</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle dropdown-button ms-5 text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Teachers
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="./index.html">About1</a></li>
+                              <li><a class="dropdown-item" href="./aboutPage.html">About2</a></li>
+                              <!-- <li><hr class="dropdown-divider"></li> -->
+                              <li><a class="dropdown-item" href="./contact.html">Contact</a></li>
+                              <li><a class="dropdown-item" href="./gallery.html">Gallery</a></li>
+                              <li><a class="dropdown-item" href="./profile.html">Profile</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle dropdown-button ms-5 text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Blogs
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="./index.html">About1</a></li>
+                              <li><a class="dropdown-item" href="./aboutPage.html">About2</a></li>
+                              <!-- <li><hr class="dropdown-divider"></li> -->
+                              <li><a class="dropdown-item" href="./contact.html">Contact</a></li>
+                              <li><a class="dropdown-item" href="./gallery.html">Gallery</a></li>
+                              <li><a class="dropdown-item" href="./profile.html">Profile</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle dropdown-button ms-5 text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Short Codes
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="./index.html">About1</a></li>
+                              <li><a class="dropdown-item" href="./aboutPage.html">About2</a></li>
+                              <!-- <li><hr class="dropdown-divider"></li> -->
+                              <li><a class="dropdown-item" href="./contact.html">Contact</a></li>
+                              <li><a class="dropdown-item" href="./gallery.html">Gallery</a></li>
+                              <li><a class="dropdown-item" href="./profile.html">Profile</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                        <button class=" book-button small" type="submit">BOOK NOW</button>
                       </div>
-                  </div>    
+                      <div class="col-sm-12 dflex">
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon bg-dark"></span>
+                          </button>
+                      </div>
+                    </div>
+                  </nav>
+              </div>
+    </header>
+    <div style="position: relative; " class="slideshow-container">
+      <div id="demo" class="carousel slide" data-bs-ride="carousel">
+  
+          <!-- Indicators/dots -->
+          <div class="carousel-indicators">
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+          </div>
+          
+          <!-- The slideshow/carousel -->
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <img  src="./Images/home-pic1.jpg" alt="Los Angeles" class="d-block" height="100%" style="width:100%; background-size: cover; background-position: center; background-repeat: no-repeat;">
+              </div>
+              <div class="carousel-item">
+                  <img src="./Images/home-pic2.jpg" alt="Chicago" class="d-block" height="100%" style="width:100%; background-size: cover;">
+              </div>
+              <div class="carousel-item">
+                  <img src="./Images/home-pic3.jpg" alt="New York" class="d-block" height="100%" style="width:100%; background-size: cover;">
               </div>
           </div>
+          
+          <!-- Left and right controls/icons -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+          </button>  
       </div>
-      <!-- -------------------FORM SECTION -->
-      <div class="col-md-4 text-white mt-4 " style="background-color: #202c45;">
-          <div class="mt-4">
-              <h4 align="center">Request <span style="color:red">Information</span></h4>
-              <form class="mt-4" >
-                  <div class="form-group">
-                      <input class="form-control" type="text" name="name" id="name" placeholder="Enter Name" required><br>
-                  </div>
-                  <div class="form-group">
-                      <div class="d-flex">
-                          <input class="w-50 rounded p-2" type="email" name="email" id="email" placeholder="Email" required>
-                          <input class="w-50 ms-4 rounded p-2" type="phone" name="phone" id="phone" placeholder="Phone" required>
-                      </div>
-                  </div>
-                  
-                  <div class="d-flex mt-4">
-                      <select class="w-50 p-2 rounded" name="dob" id="dob" required><br>
-                          <option value="choose subject">Choose Subject</option>
-                          <option value="1">Software Engineering</option>
-                          <option value="2">Computer Science</option>
-                      </select>
-                      <input class="w-50 ms-4 p-2 rounded" type="text" name="dob" id="dob" placeholder="Date of Birth">
-                  </div>
-              
-                  <textarea class="mt-4 w-100 rounded" name="message" id="message" cols="20" rows="4">Enter Message</textarea><br>
-                  <button class="w-100 mt-4 rounded p-2 btn-danger" type="submit">Submit Request</button>
-                  </div>
-                  
+      <div class="text-white w-50" style="position: absolute; top:30%;left: 10%; z-index: 1000;">
+          <h1 style="font-size: 5rem; font-weight: 400;">EDUCATION</h1>
+          <p class="p-2" style="font-size: 1.5rem; background-image: linear-gradient(rgba(0,0,0,.5), rgba(18, 17, 48, 0.5)); border-left: 2px solid red;" >EDUCATION FOR EVERYONE</p>
+          <p >We provide always our best services for our client and always try to achieve our client's trust and satisfaction</p>
+          <div>
+              <button class="text-white p-2" style="background-color: #202c45; border: none; border-left: 3px solid red;" >View Details</button>
+          </div>
+      </div>
+  </div>
+    <!-- education -->
+  <!-- --------------------WELCOME TO EDUCATION----------- -->
+  <div class="container pb-4">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="mt-4">
+                <h2>WELCOME TO EDUCATION</h2>
+                <p><span style="border-bottom:3px solid red"> GRAVIDA</span> VITAE DAPIBUS EDUCATION</p>
+            </div>
+  
+            <div class="welcome-content">
+                <p>
+                    Cum sociis natoque penatibus et ultrices volutpat. Nullam wisi ultricies a, gravida vitae, dapibus risus ante sodales lectus.Cum sociis natoque penatibus et ultrices volutpat.
+                    Nullam wisi ultricies a, gravida vitae, dapibus risus ante sodales lectus
+                </p>
+            </div>
+            <div class="mt-4">
+                <div class="row">
+                    <div class="d-flex">
+                        <div class="col-md-6">
+                            <div class="d-flex">
+                                <div>
+                                    <i class="fa fa-scissors  border p-3 text-white rounded-circle" style="background-color: #202c45;"></i>
+                                </div>
+                                <div class="ms-4">
+                                    <h6>LESS CSS</h6>
+                                    <p>Lorem ipsum dolor sit amet, consectetur ipsum dolor sit amet.</p>
+                                </div>
+                                
+                            </div>
+  
+                            <div class="d-flex mt-4">
+                                <div>
+                                    <i class="fa fa-wrench border p-3 text-white rounded-circle" style="background-color: #f2184f;"></i>
+                                </div>
+                                <div class="ms-4 ">
+                                    <h6>SPECIAL SHORTCOD</h6>
+                                    <p>Lorem ipsum dolor sit amet, consectetur ipsum dolor sit amet.</p>
+                                </div>
+                            </div>
+  
+                            <div class="d-flex mt-4">
+                                <div>
+                                    <i class="fa fa-laptop border p-3 text-white rounded-circle" style="background-color: #202c45;"></i>
+                                </div>
+                                <div class="ms-4">
+                                    <h6>RESPONSIVE</h6>
+                                    <p>Lorem ipsum dolor sit amet, consectetur ipsum dolor sit amet.</p>
+                            
+                                </div>
+                            </div>
+                        </div>
+                            <!----------------------- COURSE CONTENT----------------------------- -->
+                        <div class="col-md-6 ms-4">
+                            <div class="d-flex">
+                                <div>
+                                    <i class="fa fa-pencil text-white p-3 rounded-circle"  style="background-color: #f2184f;"></i>
+                                </div>
+                                <div class="ms-4">
+                                    <h6>EASY CUSTOMIZ</h6>
+                                    <p>Lorem ipsum dolor sit amet, consectetur ipsum dolor sit amet.</p>
+                            
+                                </div>
+                            </div>
+  
+                            <div class="d-flex mt-4">
+                                <div>
+                                    <i class="fa fa-anchor border p-3 text-white rounded-circle" style="background-color: #202c45;"></i>
+                                </div>
+                                <div class="ms-4">
+                                    <h6>W3 VALIDATION</h6>
+                                    <p>Lorem ipsum dolor sit amet, consectetur ipsum dolor sit amet.</p>
+                                </div>
+                                
+                            </div>
+  
+                            <div class="d-flex mt-4">
+                                <div >
+                                    <i class="fa fa-lightbulb-o text-white p-3 rounded-circle" style="background-color: #f2184f;"></i>
+                                </div>
+                                <div class="ms-4">
+                                    <h6>RETINA READY</h6>
+                                    <p>Lorem ipsum dolor sit amet, consectetur ipsum dolor sit amet.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+        <!-- -------------------FORM SECTION -->
+        <div class="col-md-4 text-white mt-4 " style="background-color: #202c45;">
+            <div class="mt-4">
+                <h4 align="center">Request <span style="color:red">Information</span></h4>
+                <form class="mt-4" >
+                    <div class="form-group">
+                        <input class="form-control form-name" type="text" name="name" id="name" placeholder="Enter Name" required><br>
+                        <div class="d-flex">
+                          <small class="form-name-text text-danger m-0 p-0"></small>
+                        </div> 
+                    </div>
 
-              </form>
-          </div>
-      </div>
-  </div>
-</div>
-  <!-- courses -->
-  <div class="container mt-5">
-    <div class="row">
-      <h3>OUR <span class="text-danger">COURSES</span></h3>
-      <hr class="bg-danger ms-3" style="width: 30px; height: 2.5px;">
-      <h6 class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, earum?</h6>
-      <div class="col-md-3 mt-2">
-        <div class="card" style="width: 18rem;">
-          <img class="card-img-top img-fluid" src="./images/4.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Accounting Technologies</h5>
-            <hr class="bg-danger ms-0" style="width: 50px; height: 2.5px;">
-            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, sit.</p>
-            <a href="#" class="btn btn-dark">VIEW DETAILS</a>
-          </div>
+                    <div class="form-group">
+                        <div class="d-flex ">
+                            <input class="w-50 rounded p-2 form-mail" type="email" name="email" id="email" placeholder="Email" required>
+                            
+                            <input class="w-50 ms-4 rounded p-2 form-phone" type="phone" name="phone" id="phone" placeholder="Phone" required>
+                            
+                        </div>
+                        <div class="d-flex ">
+                          <small class="form-phone-text text-danger w-50 p-2"></small>
+                          <small class="form-mail-text text-danger w-50 p-2"></small>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex mt-4">
+                        <select class="w-50 p-2 rounded form-select small" name="dob" id="dob" required><br>
+                            <option value="choose subject">Choose Subject</option>
+                            <option value="1">Software Engineering</option>
+                            <option value="2">Computer Science</option>
+                        </select>
+                        <input class="w-50 ms-4 p-2 rounded form-dob" type="text" name="dob" id="dob" placeholder="Date of Birth">
+                        
+                    </div>
+                    <div class="d-flex">
+                      <small class="form-select-text text-danger w-50 p-2"></small>
+                      <small class="form-dob-text text-danger w-50 p-2"></small>
+                    </div>
+                
+                    <textarea class="mt-4 w-100 rounded form-desc" name="message" id="message" cols="20" rows="4" placeholder="Enter Message"></textarea><br>
+                    <small class="form-desc-text text-danger"></small>
+                    <button class="w-100 mt-4 rounded p-2 btn-danger form-button" type="submit">Submit Request</button>
+                    </div>
+                    
+  
+                </form>
+            </div>
         </div>
-      </div>
-      <div class="col-md-3 mt-2">
-        <div class="card" style="width: 18rem;">
-          <img class="card-img-top img-fluid" src="./images/5.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Accounting Technologies</h5>
-            <hr class="bg-danger ms-0" style="width: 50px; height: 2.5px;">
-            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, sit.</p>
-            <a href="#" class="btn btn-dark">VIEW DETAILS</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 mt-2">
-        <div class="card" style="width: 18rem;">
-          <img class="card-img-top img-fluid" src="./images/6.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Accounting Technologies</h5>
-            <hr class="bg-danger ms-0" style="width: 50px; height: 2.5px;">
-            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, sit.</p>
-            <a href="#" class="btn btn-dark">VIEW DETAILS</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 mt-2">
-        <div class="card" style="width: 18rem;">
-          <img class="card-img-top img-fluid" src="./images/8.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Accounting Technologies</h5>
-            <hr class="bg-danger ms-0" style="width: 50px; height: 2.5px;">
-            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, sit.</p>
-            <a href="#" class="btn btn-dark">VIEW DETAILS</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 mt-2">
-        <div class="card" style="width: 18rem;">
-          <img class="card-img-top img-fluid" src="./images/4.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Accounting Technologies</h5>
-            <hr class="bg-danger ms-0" style="width: 50px; height: 2.5px;">
-            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, sit.</p>
-            <a href="#" class="btn btn-dark">VIEW DETAILS</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 mt-2">
-        <div class="card" style="width: 18rem;">
-          <img class="card-img-top img-fluid" src="./images/5.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Accounting Technologies</h5>
-            <hr class="bg-danger ms-0" style="width: 50px; height: 2.5px;">
-            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, sit.</p>
-            <a href="#" class="btn btn-dark">VIEW DETAILS</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 mt-2">
-        <div class="card" style="width: 18rem;">
-          <img class="card-img-top img-fluid" src="./images/6.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Accounting Technologies</h5>
-            <hr class="bg-danger ms-0" style="width: 50px; height: 2.5px;">
-            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, sit.</p>
-            <a href="#" class="btn btn-dark">VIEW DETAILS</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 mt-2">
-        <div class="card" style="width: 18rem;">
-          <img class="card-img-top img-fluid" src="./images/8.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Accounting Technologies</h5>
-            <hr class="bg-danger ms-0" style="width: 50px; height: 2.5px;">
-            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, sit.</p>
-            <a href="#" class="btn btn-dark">VIEW DETAILS</a>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
-  <!-- why choose us -->
-  <div class="container mt-3 mb-5">
-    <div class="row">
-      <div class="col-md-6">
-        <img src="./images/1.jpg" alt="" class="img-fluid">
-      </div>
-      <div class="col-md-6">
-        <h3>Why <span class="text-danger">Choose Us</span>?</h3>
-        <hr class="bg-danger ms-3" style="width: 30px; height: 2.5px;"  >
-        <h6 class="text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-          Eum deleniti nostrum repellat ipsa at asperiores, ratione quaerat facere. Iusto, facilis!
-        </h6>
-        <div class="d-flex justify-content-evenly">
-          <div class="col-md-4 d-flex justify-content-center mt-3">
-            <div>
-              <i class="fa fa-mobile fa-4x ms-5" aria-hidden="true"></i>
-              <h5>RESPONSIVE</h5>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex justify-content-center mt-3">
-            <div>
-                <i class="fa fa-pencil fa-4x ms-5" aria-hidden="true"></i>
-              <h5>VALIDATION</h5>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex justify-content-center mt-3">
-            <div>
-              <i class="fa fa-4x ms-5 fa-lightbulb-o" aria-hidden="true"></i>
-              <h5>CERTIFICATION</h5>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- teachers -->
-  <div class="container mt-5">
-    <div class="row">
-      <h3>OUR <span class="text-danger">TEACHERS</span></h3>
-      <hr class="bg-danger ms-3" style="width: 30px; height: 2.5px;"  >
-      <h6 class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, earum?</h6>
-      <div class="col-md-3">
-        <div class="card" style="width: 18rem;">
-          <img class="card-img-top img-fluid" src="./images/team5.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title text-danger text-lg">JOHN DOE <span class="text-dark small">- Teacher</span> </h5>
-            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laborum?</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <i class="fa fa-instagram fa-lg"></i>
-              <i class="fa fa-facebook fa-lg"></i>
-              <i class="fa fa-twitter fa-lg"></i>
-              <a href="#" class="btn btn-dark">view details </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card" style="width: 18rem;">
-          <img class="card-img-top img-fluid" src="./images/team6.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title text-danger text-lg">JOHN DOE <span class="text-dark small">- Teacher</span> </h5>
-            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laborum?</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <i class="fa fa-instagram fa-lg"></i>
-              <i class="fa fa-facebook fa-lg"></i>
-              <i class="fa fa-twitter fa-lg"></i>
-              <a href="#" class="btn btn-dark">view details </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card" style="width: 18rem;">
-          <img class="card-img-top img-fluid" src="./images/team7.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title text-danger text-lg">JOHN DOE <span class="text-dark small">- Teacher</span> </h5>
-            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laborum?</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <i class="fa fa-instagram fa-lg"></i>
-              <i class="fa fa-facebook fa-lg"></i>
-              <i class="fa fa-twitter fa-lg"></i>
-              <a href="#" class="btn btn-dark">view details </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card" style="width: 18rem;">
-          <img class="card-img-top img-fluid" src="./images/team8.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title text-danger text-lg">JOHN DOE <span class="text-dark small">- Teacher</span> </h5>
-            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laborum?</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <i class="fa fa-instagram fa-lg"></i>
-              <i class="fa fa-facebook fa-lg"></i>
-              <i class="fa fa-twitter fa-lg"></i>
-              <a href="#" class="btn btn-dark">view details </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- gallery -->
-  <div class="container mt-5">
-    <h3>OUR <span class="text-danger">GALLERY</span></h3>
-    <hr class="bg-danger" style="width: 30px; height: 2.5px;" >
-    <h6 class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, earum?</h6>
-    <div class="row mt-2">
-        <div class="col-md-3 dark-image">
-            <img src="https://source.unsplash.com/random/400x400" alt="" srcset="" class="img-fluid mb-2 mt-2">
-        </div>
-        <div class="col-md-3 dark-image">
-            <img src="https://source.unsplash.com/random/400x400" alt="" srcset="" class="img-fluid mb-2 mt-2">
-        </div>
-        <div class="col-md-3 dark-image">
-            <img src="https://source.unsplash.com/random/400x400" alt="" srcset="" class="img-fluid mb-2 mt-2">
-        </div>
-        <div class="col-md-3 dark-image">
-            <img src="https://source.unsplash.com/random/400x400" alt="" srcset="" class="img-fluid mb-2 mt-2">
-        </div>
-        <div class="col-md-3 dark-image">
-            <img src="https://source.unsplash.com/random/400x400" alt="" srcset="" class="img-fluid mb-2 mt-2">
-        </div>
-        <div class="col-md-3 dark-image">
-            <img src="https://source.unsplash.com/random/400x400" alt="" srcset="" class="img-fluid mb-2 mt-2">
-        </div>
-        <div class="col-md-3 dark-image">
-            <img src="https://source.unsplash.com/random/400x400" alt="" srcset="" class="img-fluid mb-2 mt-2">
-        </div>
-        <div class="col-md-3 dark-image">
-            <img src="https://source.unsplash.com/random/400x400" alt="" srcset="" class="img-fluid mb-2 mt-2">
-        </div>
-        <div class="col-md-3 dark-image">
-            <img src="https://source.unsplash.com/random/400x400" alt="" srcset="" class="img-fluid mb-2 mt-2">
-        </div>
-        <div class="col-md-3 dark-image">
-            <img src="https://source.unsplash.com/random/400x400" alt="" srcset="" class="img-fluid mb-2 mt-2">
-        </div>
-        <div class="col-md-3 dark-image">
-            <img src="https://source.unsplash.com/random/400x400" alt="" srcset="" class="img-fluid mb-2 mt-2">
-        </div>
-        <div class="col-md-3 dark-image">
-            <img src="https://source.unsplash.com/random/400x400" alt="" srcset="" class="img-fluid mb-2 mt-2">
-        </div>
-    </div>
-</div>
-  <!-- subscribe -->
-  <div class="subscribe bg-danger mt-2">
-    <div class="container">
-        <div class="row d-flex align-items-center">
-          <div class="col-md-6 col-sm-12 mt-5 text-white">
-            <h3><i class="fa fa-envelope" aria-hidden="true"></i> SUBSCRIBE TO OUR NEWS LETTER</h3>
-          </div>
-          <div class="col-md-6 col-sm-12">
-            <div class="input-group mt-5">
-              <input type="text" class="form-control" placeholder="Your Email" aria-label="Recipient's username" aria-describedby="button-addon2">
-              <button class="btn btn-dark text-white" type="button" id="button-addon2">Subscribe</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  <footer class="bg-dark p-0 m-0">
-    <div class="container bg-dark mb-2">
+    <!-- courses -->
+    <div class="container mt-5">
       <div class="row">
-      <div class="row mt-3">
-        <div class="col-md-3 col-sm-12">
-          <img src="./images/pressimage.png" alt="" srcset="" class="img-fluid">
-          <h6 class="dark-white mt-2">Lorem ipsum dolor sit amet consectetur.</h6>
-          <h6 class="dark-white">123-456-789</h6>
-          <h6 class="dark-white">contact@yourdomain.com</h6>
-          <h6 class="dark-white">www.yourdomain.com</h6>
+        <h3>OUR <span class="text-danger">COURSES</span></h3>
+        <hr class="bg-danger ms-3" style="width: 30px; height: 2.5px;">
+        <h6 class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, earum?</h6>
+        <div class="col-md-3 mt-2">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top img-fluid" src="./images/4.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Accounting Technologies</h5>
+              <hr class="bg-danger ms-0" style="width: 50px; height: 2.5px;">
+              <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, sit.</p>
+              <a href="#" class="btn btn-dark">VIEW DETAILS</a>
+            </div>
+          </div>
         </div>
-        <div class="col-md-3 col-sm-12">
-          <h4 class="text-white">Useful Links</h4>
-          <h6 class="dark-white">About Us</h6>
-          <h6 class="dark-white">Our Courses</h6>
-          <h6 class="dark-white">Pricing Table</h6>
-          <h6 class="dark-white">Gallery</h6>
-          <h6 class="dark-white">Shop</h6>
+        <div class="col-md-3 mt-2">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top img-fluid" src="./images/5.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Accounting Technologies</h5>
+              <hr class="bg-danger ms-0" style="width: 50px; height: 2.5px;">
+              <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, sit.</p>
+              <a href="#" class="btn btn-dark">VIEW DETAILS</a>
+            </div>
+          </div>
         </div>
-        <div class="col-md-3 col-sm-12">
-          <h4 class="text-white">Twitter Feed</h4>
-          <small class="dark-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-             Totam ab facere facilis delectus quae consequuntur!
-          </small>
-          <small class="dark-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-             Totam ab facere facilis delectus quae consequuntur!
-          </small>
-          <small class="dark-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-             Totam ab facere facilis delectus quae consequuntur!
-          </small>
+        <div class="col-md-3 mt-2">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top img-fluid" src="./images/6.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Accounting Technologies</h5>
+              <hr class="bg-danger ms-0" style="width: 50px; height: 2.5px;">
+              <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, sit.</p>
+              <a href="#" class="btn btn-dark">VIEW DETAILS</a>
+            </div>
+          </div>
         </div>
-        <div class="col-md-3 col-sm-12 mt-2">
-          <h4 class="text-white">Opening Hours</h4>
-          <h6 class="dark-white">Mon - Tues: 6:00AM - 10:00AM</h6>
-          <!-- <hr class="dotted"> -->
-          <h6 class="dark-white">Mon - Tues: 6:00AM - 10:00AM</h6>
-          <h6 class="dark-white">Mon - Tues: 6:00AM - 10:00AM</h6>
+        <div class="col-md-3 mt-2">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top img-fluid" src="./images/8.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Accounting Technologies</h5>
+              <hr class="bg-danger ms-0" style="width: 50px; height: 2.5px;">
+              <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, sit.</p>
+              <a href="#" class="btn btn-dark">VIEW DETAILS</a>
+            </div>
+          </div>
         </div>
-        <div class="col-md-2 col-sm-12 mt-2">
-          <h4 class="text-white">Call Us Now</h4>
-          <h6 class="dark-white small">123-456-789</h6>
-          <h6 class="dark-white small">123-456-789</h6>
+        <div class="col-md-3 mt-2">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top img-fluid" src="./images/4.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Accounting Technologies</h5>
+              <hr class="bg-danger ms-0" style="width: 50px; height: 2.5px;">
+              <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, sit.</p>
+              <a href="#" class="btn btn-dark">VIEW DETAILS</a>
+            </div>
+          </div>
         </div>
-        <div class="col-md-4 col-sm-12 mt-2">
-          <h4 class="text-white">Connect With Us</h4>
+        <div class="col-md-3 mt-2">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top img-fluid" src="./images/5.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Accounting Technologies</h5>
+              <hr class="bg-danger ms-0" style="width: 50px; height: 2.5px;">
+              <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, sit.</p>
+              <a href="#" class="btn btn-dark">VIEW DETAILS</a>
+            </div>
+          </div>
         </div>
-        <div class="col-md-6 col-sm-12 mt-2">
-          <h4 class="text-white">Subscribe Us</h4><br>           
-          <div class="input-group mb-3">
-              <input type="text" class="form-control" placeholder="Your Email" aria-label="Your Email" aria-describedby="basic-addon2">
-              <div class="input-group-append">
-                <button class="input-group-text bg-danger text-white border-0" id="basic-addon2">Subscribe</button>
-              </div>
+        <div class="col-md-3 mt-2">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top img-fluid" src="./images/6.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Accounting Technologies</h5>
+              <hr class="bg-danger ms-0" style="width: 50px; height: 2.5px;">
+              <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, sit.</p>
+              <a href="#" class="btn btn-dark">VIEW DETAILS</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mt-2">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top img-fluid" src="./images/8.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Accounting Technologies</h5>
+              <hr class="bg-danger ms-0" style="width: 50px; height: 2.5px;">
+              <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, sit.</p>
+              <a href="#" class="btn btn-dark">VIEW DETAILS</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 
+    <!-- why choose us -->
+    <div class="container mt-3 mb-5">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="./images/1.jpg" alt="" class="img-fluid">
+        </div>
+        <div class="col-md-6">
+          <h3>Why <span class="text-danger">Choose Us</span>?</h3>
+          <hr class="bg-danger ms-3" style="width: 30px; height: 2.5px;"  >
+          <h6 class="text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Eum deleniti nostrum repellat ipsa at asperiores, ratione quaerat facere. Iusto, facilis!
+          </h6>
+          <div class="d-flex justify-content-evenly">
+            <div class="col-md-4 d-flex justify-content-center mt-3">
+              <div>
+                <i class="fa fa-mobile fa-4x ms-5" aria-hidden="true"></i>
+                <h5>RESPONSIVE</h5>
+              </div>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center mt-3">
+              <div>
+                  <i class="fa fa-pencil fa-4x ms-5" aria-hidden="true"></i>
+                <h5>VALIDATION</h5>
+              </div>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center mt-3">
+              <div>
+                <i class="fa fa-4x ms-5 fa-lightbulb-o" aria-hidden="true"></i>
+                <h5>CERTIFICATION</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- counter to do -->
+    <!-- -------------------STATS---------------------- -->
+    <div class="p-4 mt-4 stats text-white bg-dark numbers">
+      <div class="container pt-4" >
+          <div class="d-flex justify-content-around pt-4">
+              <div class="text-center" id="counter">
+                  <div style="display: flex; flex-direction: column; align-items: center;">
+                      <i class="fa fa-smile-o fa-2x text-danger"></i>
+                  </div>
+                  <p class="h1 mt-4 counter-value value" data-count = "5456">5456</p>
+                  <p>HAPPY STUDENTS</p>
+              </div>
+
+              <div class="text-center" id="counter">
+                  <div style="display: flex; flex-direction: column; align-items: center;">
+                      <i class="fa fa-book fa-2x text-danger"></i>
+                  </div>
+                  <p class="h1 mt-4 counter-value value" data-count="675">675</p>
+                  <p>OUR COURSES</p>
+              </div>
+
+              <div class="text-center" id="counter">
+                  <div style="display: flex; flex-direction: column; align-items: center;">
+                      <i class="fa fa-users fa-2x text-danger"></i>
+                  </div>
+                  <p class="h1 mt-4 counter-value value" data-count="248">248</p>
+                  <p>OUR TEACHERS</p>
+              </div>
+
+              <div class="text-center" id="counter">
+                  <div style="display: flex; flex-direction: column; align-items: center;">
+                      <i class="fa fa-trophy fa-2x text-danger"></i>
+                  </div>
+                  <p class="h1 mt-4 counter-value value" data-count="24">24</p>
+                  <p>AWARD WON</p>
+              </div> 
+          </div>
+      </div> 
+  </div>
+    <!-- teachers -->
+    <div class="container mt-5">
+      <div class="row">
+        <h3>OUR <span class="text-danger">TEACHERS</span></h3>
+        <hr class="bg-danger ms-3" style="width: 30px; height: 2.5px;"  >
+        <h6 class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, earum?</h6>
+        <div class="col-md-3">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top img-fluid" src="./images/team5.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title text-danger text-lg">JOHN DOE <span class="text-dark small">- Teacher</span> </h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laborum?</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <i class="fa fa-instagram fa-lg"></i>
+                <i class="fa fa-facebook fa-lg"></i>
+                <i class="fa fa-twitter fa-lg"></i>
+                <a href="#" class="btn btn-dark">view details </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top img-fluid" src="./images/team6.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title text-danger text-lg">JOHN DOE <span class="text-dark small">- Teacher</span> </h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laborum?</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <i class="fa fa-instagram fa-lg"></i>
+                <i class="fa fa-facebook fa-lg"></i>
+                <i class="fa fa-twitter fa-lg"></i>
+                <a href="#" class="btn btn-dark">view details </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top img-fluid" src="./images/team7.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title text-danger text-lg">JOHN DOE <span class="text-dark small">- Teacher</span> </h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laborum?</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <i class="fa fa-instagram fa-lg"></i>
+                <i class="fa fa-facebook fa-lg"></i>
+                <i class="fa fa-twitter fa-lg"></i>
+                <a href="#" class="btn btn-dark">view details </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top img-fluid" src="./images/team8.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title text-danger text-lg">JOHN DOE <span class="text-dark small">- Teacher</span> </h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laborum?</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <i class="fa fa-instagram fa-lg"></i>
+                <i class="fa fa-facebook fa-lg"></i>
+                <i class="fa fa-twitter fa-lg"></i>
+                <a href="#" class="btn btn-dark">view details </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- gallery -->
+    <div class="container mt-5">
+      <h3>OUR <span class="text-danger">GALLERY</span></h3>
+      <hr class="bg-danger" style="width: 30px; height: 2.5px;" >
+      <h6 class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, earum?</h6>
+      <div class="row mt-2">
+          <div class="col-md-3 dark-image">
+              <img src="https://source.unsplash.com/random/400x400" alt="" srcset="" class="img-fluid mb-2 mt-2">
+          </div>
+          <div class="col-md-3 dark-image">
+              <img src="https://source.unsplash.com/random/400x400" alt="" srcset="" class="img-fluid mb-2 mt-2">
+          </div>
+          <div class="col-md-3 dark-image">
+              <img src="https://source.unsplash.com/random/400x400" alt="" srcset="" class="img-fluid mb-2 mt-2">
+          </div>
+          <div class="col-md-3 dark-image">
+              <img src="https://source.unsplash.com/random/400x400" alt="" srcset="" class="img-fluid mb-2 mt-2">
+          </div>
+          <div class="col-md-3 dark-image">
+              <img src="https://source.unsplash.com/random/400x400" alt="" srcset="" class="img-fluid mb-2 mt-2">
+          </div>
+          <div class="col-md-3 dark-image">
+              <img src="https://source.unsplash.com/random/400x400" alt="" srcset="" class="img-fluid mb-2 mt-2">
+          </div>
+          <div class="col-md-3 dark-image">
+              <img src="https://source.unsplash.com/random/400x400" alt="" srcset="" class="img-fluid mb-2 mt-2">
+          </div>
+          <div class="col-md-3 dark-image">
+              <img src="https://source.unsplash.com/random/400x400" alt="" srcset="" class="img-fluid mb-2 mt-2">
+          </div>
+          <div class="col-md-3 dark-image">
+              <img src="https://source.unsplash.com/random/400x400" alt="" srcset="" class="img-fluid mb-2 mt-2">
+          </div>
+          <div class="col-md-3 dark-image">
+              <img src="https://source.unsplash.com/random/400x400" alt="" srcset="" class="img-fluid mb-2 mt-2">
+          </div>
+          <div class="col-md-3 dark-image">
+              <img src="https://source.unsplash.com/random/400x400" alt="" srcset="" class="img-fluid mb-2 mt-2">
+          </div>
+          <div class="col-md-3 dark-image">
+              <img src="https://source.unsplash.com/random/400x400" alt="" srcset="" class="img-fluid mb-2 mt-2">
+          </div>
+      </div>
+  </div>
+    <!-- subscribe -->
+    <div class="subscribe bg-danger mt-2">
+      <div class="container">
+          <div class="row d-flex align-items-center">
+            <div class="col-md-12 col-sm-12 mt-5 text-light error-subscribe-mail text-center"></div>
+            <div class="col-md-6 col-sm-12 mt-5 text-white">
+              <h3><i class="fa fa-envelope" aria-hidden="true"></i> SUBSCRIBE TO OUR NEWS LETTER</h3>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <div class="input-group mt-5">
+                <input type="text" class="form-control subscribe-email" placeholder="Your Email" aria-label="Recipient's username" aria-describedby="button-addon2" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                <button class="btn btn-dark text-white subscribe-email-button" type="button" id="button-addon2">Subscribe</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <footer class="bg-dark p-0 m-0">
+      <div class="container bg-dark mb-2">
+        <div class="row">
+        <div class="row mt-3">
+          <div class="col-md-3 col-sm-12">
+            <img src="./images/pressimage.png" alt="" srcset="" class="img-fluid">
+            <h6 class="dark-white mt-2">Lorem ipsum dolor sit amet consectetur.</h6>
+            <h6 class="dark-white">123-456-789</h6>
+            <h6 class="dark-white">contact@yourdomain.com</h6>
+            <h6 class="dark-white">www.yourdomain.com</h6>
+          </div>
+          <div class="col-md-3 col-sm-12">
+            <h4 class="text-white">Useful Links</h4>
+            <h6 class="dark-white">About Us</h6>
+            <h6 class="dark-white">Our Courses</h6>
+            <h6 class="dark-white">Pricing Table</h6>
+            <h6 class="dark-white">Gallery</h6>
+            <h6 class="dark-white">Shop</h6>
+          </div>
+          <div class="col-md-3 col-sm-12">
+            <h4 class="text-white">Twitter Feed</h4>
+            <small class="dark-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+               Totam ab facere facilis delectus quae consequuntur!
+            </small>
+            <small class="dark-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+               Totam ab facere facilis delectus quae consequuntur!
+            </small>
+            <small class="dark-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+               Totam ab facere facilis delectus quae consequuntur!
+            </small>
+          </div>
+          <div class="col-md-3 col-sm-12 mt-2">
+            <h4 class="text-white">Opening Hours</h4>
+            <h6 class="dark-white">Mon - Tues: 6:00AM - 10:00AM</h6>
+            <!-- <hr class="dotted"> -->
+            <h6 class="dark-white">Mon - Tues: 6:00AM - 10:00AM</h6>
+            <h6 class="dark-white">Mon - Tues: 6:00AM - 10:00AM</h6>
+          </div>
+          <div class="col-md-2 col-sm-12 mt-2">
+            <h4 class="text-white">Call Us Now</h4>
+            <h6 class="dark-white small">123-456-789</h6>
+            <h6 class="dark-white small">123-456-789</h6>
+          </div>
+          <div class="col-md-4 col-sm-12 mt-2">
+            <h4 class="text-white">Connect With Us</h4>
+          </div>
+          <div class="col-md-6 col-sm-12 mt-2">
+            <h4 class="text-white">Subscribe Us</h4><br>           
+            <div class="error-subscribe text-danger"></div>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control sub-form" placeholder="Your Email" aria-label="Your Email" aria-describedby="basic-addon2" name="subscribe">
+                <div class="input-group-append">
+                  <button class="input-group-text bg-danger text-white border-0 subscribe-submit" id="basic-addon2" type="submit">Subscribe</button>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="./js/app.js"></script> 
 </body>
 </html>

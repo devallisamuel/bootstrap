@@ -112,3 +112,26 @@ position:absolute;
 .carousel-content {
     position:absolute;
 }
+/* sticky nav */
+.sticky {
+    position: fixed !important;
+    top: 0 !important;
+    width: 100% !important;
+    z-index: 3000000 !important;
+  }
+  .sticky + .slideshow-container    {
+      padding: auto;
+  }
+  #myNavbar {
+      position: sticky !important;
+      top:0 !important;
+  }
+.stats {
+    background-image: linear-gradient(rgba(0,0,0,.9), rgba(18, 17, 48, 0.9)), url("./Images/huh!.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+/* validation */
+/* .error-subscribe   {
+    display: none;
+} */
